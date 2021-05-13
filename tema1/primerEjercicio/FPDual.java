@@ -1,12 +1,21 @@
 package primerEjercicio;
-
+/**
+ * 
+ * @author elias
+ *
+ */
 public class FPDual {
-
+/**
+ * 
+ * @param args
+ */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		variablesChallenge();
 	}
-	
+	/**
+	 * Metod to do everything
+	 */
 	private static void variablesChallenge() {
 		//Create employers
 		Developer dev1 = new Developer("Juan", 18, 618924872);
@@ -17,18 +26,17 @@ public class FPDual {
 		System.out.println(dev1);
 		System.out.println(dev4);
 		//Show every employer
-		System.out.println("\nEl id de empleado es de dev1= "+dev1.getIdEmployer());
-		System.out.println("El id de empleado es de dev2= "+dev2.getIdEmployer());
-		System.out.println("El id de empleado es de dev3= "+dev3.getIdEmployer());
-		System.out.println("El id de empleado es de dev4= "+dev4.getIdEmployer());
+		System.out.println("\nThe id of dev1= "+dev1.getIdEmployer());
+		System.out.println("The id of dev2= "+dev2.getIdEmployer());
+		System.out.println("The id of dev3= "+dev3.getIdEmployer());
+		System.out.println("The id of dev4= "+dev4.getIdEmployer());
 		//Substac 2 VacationDays to Employer2
 		dev2.substrac(2);
 		System.out.println("\n"+dev2);
 		//Show every VacationDays 
-		System.out.println("\nLas vacaciones del empleado dev1 son de= "+dev1.getVacationDays()+ " dias");
-		System.out.println("Las vacaciones del empleado dev2 son de= "+dev2.getVacationDays()+ " dias");
-		System.out.println("Las vacaciones del empleado dev3 son de= "+dev3.getVacationDays()+ " dias");
-		System.out.println("Las vacaciones del empleado dev4 son de= "+dev4.getVacationDays()+ " dias");
-
+		System.out.println("\nThe vacations of dev1 are= "+dev1.getVacationDays()+ " days");
+		System.out.println("The vacations of dev2 are= "+dev2.getVacationDays()+ " days");
+		System.out.println("The vacations of dev3 are= "+dev3.getVacationDays()+ " days");
+		System.out.println("The vacations of dev4 are= "+dev4.getVacationDays()+ " days");
 	}
 }

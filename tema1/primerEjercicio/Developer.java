@@ -1,16 +1,25 @@
 package primerEjercicio;
-
+/**
+ * 
+ * @author elias
+ *
+ */
 public class Developer {
 	private static final byte NORMALVACATIONDAYS=21;
 	private static final int MAXIMUNEMPLOYERNUMBERS=127;
 	private  String name;
 	private int age;
 	private long telfNumber; 
-	private static final String enterpriseName="Everis";
+	private static final String ENTERPRISENAME="Everis";
 	private static short numEmployers;
 	private short idEmployer;
 	private int vacationDays=NORMALVACATIONDAYS;
-	
+	/**
+	 * Constructor metod
+	 * @param name
+	 * @param age
+	 * @param telfNumber
+	 */
 	public Developer(String name,int age,long telfNumber) {
 		this.name=name;
 		this.age=age;
@@ -19,11 +28,11 @@ public class Developer {
 			Developer.numEmployers++;
 			idEmployer=numEmployers;
 		}else {
-			System.out.println("Ha llegado al maximo numero de empleados");
+			System.out.println("You reach the Employer limits");
 		}
 	}
 	/**
-	 * Metodo para restar dias de vacaciones
+	 * Metod to substrac vacationDays
 	 * @param vacationDays
 	 */
 	public void substrac(int vacationDays) {
@@ -33,13 +42,13 @@ public class Developer {
 			System.out.println("You can't take more vacationDays from this employer");
 		}
 	}
-	//Metodo toString para mostrar los empleados
+	//Metod toString to show Employers
 	@Override
 	public String toString() {
-		return "Developer [name= " + name + ", age= "+age +", telfNumber= "+telfNumber+", Employer ID= "+idEmployer+", numEmp= "+numEmployers+", VacationDays= "+vacationDays +"]";
+		return "Developer [name= " + name + ", age= "+age +", telfNumber= "+telfNumber+", Employer ID= "+idEmployer+", Enterprise name= "+ENTERPRISENAME+", numEmp= "+numEmployers+", VacationDays= "+vacationDays +"]";
 	}
 	
-	//Metodos Getter y Setters
+	//Metods Getters and Setters
 	
 	/**
 	 * @return the vacationDays
@@ -108,10 +117,10 @@ public class Developer {
 	
 
 	/**
-	 * @return the enterprisename
+	 * @return the ENTERPRISENAME
 	 */
-	public static String getEnterprisename() {
-		return enterpriseName;
+	public static String getENTERPRISENAME() {
+		return ENTERPRISENAME;
 	}
 	/**
 	 * @return the telfNumber
